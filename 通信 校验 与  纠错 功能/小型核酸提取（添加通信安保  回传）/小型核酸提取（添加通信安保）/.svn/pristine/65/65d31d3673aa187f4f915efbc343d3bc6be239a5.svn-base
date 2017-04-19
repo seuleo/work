@@ -1,0 +1,434 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\asus\Desktop\SVN\小型核酸提取（添加通信安保）\小型核酸提取（添加通信安保）\USER\CAN.uvproj
+Project File Date:  02/23/2017
+
+<h2>Output:</h2>
+Build target 'CAN'
+linking...
+Program Size: Code=41044 RO-data=940 RW-data=3324 ZI-data=5876  
+FromELF: creating hex file...
+"..\OBJ\CAN.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\CAN.axf" 
+Set JLink Project File to "C:\Users\asus\Desktop\SVN\小型核酸提取（添加通信安保）\小型核酸提取（添加通信安保）\USER\JLinkSettings.ini"
+* JLink Info: Device "STM32F407ZG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+S/N : 12345678 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407ZG
+VTarget = 3.332V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+                                       Package("overflag","1",SendBackBuff);
+main.c(601): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(611): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(615): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(618): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(619): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(629): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(633): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(638): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(639): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(649): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(653): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(658): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(659): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(670): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","2",SendBackBuff);
+main.c(671): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c: 23 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling exti.c...
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\Device\DeviceVibration.h(60): warning:  #1295-D: Deprecated declaration MovProcess - give arg types
+  void MovProcess();
+..\HARDWARE\EXTI\exti.c(107): warning:  #177-D: variable "door_open" was declared but never referenced
+        static u8 door_open=0;           //记录外部中断前的状态，打开了=1， 关闭=0      
+..\HARDWARE\EXTI\exti.c: 3 warnings, 0 errors
+compiling spi.c...
+compiling timer.c...
+..\HARDWARE\Device\DeviceVibration.h(60): warning:  #1295-D: Deprecated declaration MovProcess - give arg types
+  void MovProcess();
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\DAC\128S085.h(34): warning:  #1295-D: Deprecated declaration DacUpdate - give arg types
+  void DacUpdate();
+..\HARDWARE\DAC\128S085.h(36): warning:  #1295-D: Deprecated declaration TemSet - give arg types
+  void TemSet();
+..\HARDWARE\TIMER\timer.c(178): warning:  #177-D: variable "sk" was declared but never referenced
+        static u8 sk;
+..\HARDWARE\TIMER\timer.c(182): warning:  #177-D: variable "temp" was declared but never referenced
+        float temp;
+..\HARDWARE\TIMER\timer.c(183): warning:  #177-D: variable "j" was declared but never referenced
+        u8 j;   
+..\HARDWARE\TIMER\timer.c: 7 warnings, 0 errors
+compiling pwm.c...
+..\HARDWARE\PWM\pwm.c(356): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\PWM\pwm.c: 1 warning, 0 errors
+compiling moto.c...
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\Device\DeviceVibration.h(60): warning:  #1295-D: Deprecated declaration MovProcess - give arg types
+  void MovProcess();
+..\SYSTEM\usart\usart.h(39): warning:  #47-D: incompatible redefinition of macro "Max_Frame_Count" (declared at line 19 of "..\HARDWARE\CAN\can.h")
+  #define Max_Frame_Count 48 //一次性接收并存放10条帧指令
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\Moto\moto.c(261): warning:  #177-D: variable "i" was declared but never referenced
+                u16 i = 0;
+..\HARDWARE\Moto\moto.c(262): warning:  #177-D: variable "j" was declared but never referenced
+                u8 j = 0;
+..\HARDWARE\Moto\moto.c(264): warning:  #177-D: variable "a" was declared but never referenced
+                u32 a = 0;
+..\HARDWARE\Moto\moto.c(371): warning:  #177-D: variable "Flag_X" was declared but never referenced
+          u8 Flag_X = 0;
+..\HARDWARE\Moto\moto.c(398): warning:  #177-D: variable "Flag_Y1" was declared but never referenced
+          u8 Flag_Y1=0;
+..\HARDWARE\Moto\moto.c(427): warning:  #177-D: variable "Flag_Y2" was declared but never referenced
+          u8 Flag_Y2 = 0;
+..\HARDWARE\Moto\moto.c(500): warning:  #177-D: variable "i" was declared but never referenced
+          static u8 i;
+..\HARDWARE\Moto\moto.c: 11 warnings, 0 errors
+compiling string_deal.c...
+..\HARDWARE\Stringdeal\string_deal.c(163): warning:  #940-D: missing return statement at end of non-void function "Convert_HEX_to_FLOAT"
+  }
+..\HARDWARE\Stringdeal\string_deal.c(192): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        value = value*10.0 + (s[i]-'0');
+..\HARDWARE\Stringdeal\string_deal.c(197): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                value = value*10.0+(s[i]-'0');
+..\HARDWARE\Stringdeal\string_deal.c(198): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                power *= 10.0;  
+..\HARDWARE\Stringdeal\string_deal.c(237): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                value = value*10.0 + (s[i]-'0');
+..\HARDWARE\Stringdeal\string_deal.c(242): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        value = value*10.0+(s[i]-'0');
+..\HARDWARE\Stringdeal\string_deal.c(243): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        power *= 10.0;  
+..\HARDWARE\Stringdeal\string_deal.c(494): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if(value2 >= 0)
+..\HARDWARE\Stringdeal\string_deal.c(705): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         *p = value1/10000.00;
+..\HARDWARE\Stringdeal\string_deal.c(697): warning:  #177-D: variable "value2" was declared but never referenced
+        float value1 = 0,value2 = 0;
+..\HARDWARE\Stringdeal\string_deal.c: 10 warnings, 0 errors
+compiling adc.c...
+..\HARDWARE\ADC\adc.c(468): warning:  #940-D: missing return statement at end of non-void function "TableSearchTemperature"
+  }
+..\HARDWARE\ADC\adc.c(474): warning:  #177-D: variable "h" was declared but never referenced
+        u8 count,h,i,j,temp;
+..\HARDWARE\ADC\adc.c(474): warning:  #177-D: variable "i" was declared but never referenced
+        u8 count,h,i,j,temp;
+..\HARDWARE\ADC\adc.c(474): warning:  #177-D: variable "temp" was declared but never referenced
+        u8 count,h,i,j,temp;
+..\HARDWARE\ADC\adc.c(477): warning:  #177-D: variable "value_bu" was declared but never referenced
+        u16 value_bu[32];
+..\HARDWARE\ADC\adc.c(513): warning:  #177-D: variable "h" was declared but never referenced
+        u8 count,h,i,j;
+..\HARDWARE\ADC\adc.c(513): warning:  #177-D: variable "i" was declared but never referenced
+        u8 count,h,i,j;
+..\HARDWARE\ADC\adc.c(516): warning:  #177-D: variable "value_bu" was declared but never referenced
+        u16 value_bu[96];
+..\HARDWARE\ADC\adc.c(595): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(i<0)
+..\HARDWARE\ADC\adc.c(679): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\ADC\adc.c(679): warning:  #940-D: missing return statement at end of non-void function "TableSearchTemperatures"
+  }
+..\HARDWARE\ADC\adc.c: 11 warnings, 0 errors
+compiling usart3.c...
+compiling 128S085.c...
+..\HARDWARE\DAC\128S085.h(34): warning:  #1295-D: Deprecated declaration DacUpdate - give arg types
+  void DacUpdate();
+..\HARDWARE\DAC\128S085.h(36): warning:  #1295-D: Deprecated declaration TemSet - give arg types
+  void TemSet();
+..\HARDWARE\DAC\128S085.c: 2 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\SYSTEM\usart\usart.c(447): warning:  #223-D: function "memset" declared implicitly
+                                                        memset(USART_RX_BUF,0,USART_REC_LEN);
+..\SYSTEM\usart\usart.c(465): warning:  #223-D: function "memset" declared implicitly
+                                                        memset(USART_RX_BUF,0,USART_REC_LEN);
+..\SYSTEM\usart\usart.c(476): warning:  #223-D: function "memset" declared implicitly
+                                                memset(USART_RX_BUF,0,USART_REC_LEN);                                           
+..\SYSTEM\usart\usart.c(479): warning:  #223-D: function "delay_ms" declared implicitly
+                                          delay_ms(200);
+..\SYSTEM\usart\usart.c(369): warning:  #177-D: variable "Res" was declared but never referenced
+        u8 Res;
+..\SYSTEM\usart\usart.c(370): warning:  #177-D: variable "vib_state" was declared but never referenced
+        u8 vib_state;
+..\SYSTEM\usart\usart.c(649): warning:  #223-D: function "strlen" declared implicitly
+                                cmd_len = strlen(FrameDeal);
+..\SYSTEM\usart\usart.c(673): warning:  #223-D: function "strcpy" declared implicitly
+                                strcpy(BufId,cmd_name);
+..\SYSTEM\usart\usart.c(675): warning:  #223-D: function "memset" declared implicitly
+                                memset(FrameDeal,0,30);
+..\SYSTEM\usart\usart.c(677): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                                NumValue = my_atoi(BufValue);
+..\SYSTEM\usart\usart.c(643): warning:  #177-D: variable "i" was declared but never referenced
+                                unsigned char i=0,cmd_len=0,temp_len=0;
+..\SYSTEM\usart\usart.c(643): warning:  #550-D: variable "cmd_len" was set but never used
+                                unsigned char i=0,cmd_len=0,temp_len=0;
+..\SYSTEM\usart\usart.c(1032): warning:  #223-D: function "strlen" declared implicitly
+                        cmd_len = strlen(FrameDeal);
+..\SYSTEM\usart\usart.c(1041): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                    sprintf(temp, "%02x", num);
+..\SYSTEM\usart\usart.c(1043): warning:  #223-D: function "memcpy" declared implicitly
+                        memcpy(Lrc_tmp,&FrameDeal[i],2);
+..\SYSTEM\usart\usart.c(1045): warning:  #223-D: function "strcmp" declared implicitly
+                        if(strcmp(temp,Lrc_tmp) == 0)
+..\SYSTEM\usart\usart.c(1048): warning:  #223-D: function "strchr" declared implicitly
+                                if(!(strchr(FrameDeal,'=') && strchr(FrameDeal,'\n')))
+..\SYSTEM\usart\usart.c(1074): warning:  #223-D: function "strcpy" declared implicitly
+                                strcpy(id,cmd_name);
+..\SYSTEM\usart\usart.c(1076): warning:  #223-D: function "memset" declared implicitly
+                                memset(FrameDeal,0,30);
+..\SYSTEM\usart\usart.c(1082): warning:  #223-D: function "memset" declared implicitly
+                                memset(FrameDeal,0,30);
+..\SYSTEM\usart\usart.c(1106): warning:  #223-D: function "strcat" declared implicitly
+        strcat(tempbuf,id);
+..\SYSTEM\usart\usart.c(1099): warning:  #177-D: variable "num" was declared but never referenced
+        int num;
+..\SYSTEM\usart\usart.c(1101): warning:  #177-D: variable "temp" was declared but never referenced
+        unsigned char temp[2];
+..\SYSTEM\usart\usart.c(1178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[0]);                                                        
+..\SYSTEM\usart\usart.c(1182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[1]);                                                        
+..\SYSTEM\usart\usart.c(1186): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[2]/60);
+..\SYSTEM\usart\usart.c(1188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1215): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[4]);                                                        
+..\SYSTEM\usart\usart.c(1219): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[5]);                                                        
+..\SYSTEM\usart\usart.c(1223): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[6]/60);
+..\SYSTEM\usart\usart.c(1225): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1228): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1234): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1237): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1243): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1246): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1252): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1255): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1259): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[10]);                                                       
+..\SYSTEM\usart\usart.c(1270): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[11]);                                                       
+..\SYSTEM\usart\usart.c(1274): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[12]);                                                       
+..\SYSTEM\usart\usart.c(1278): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[13]/60);
+..\SYSTEM\usart\usart.c(1280): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1283): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1289): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1292): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1298): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1301): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1307): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1310): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1321): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[17]);                                                       
+..\SYSTEM\usart\usart.c(1325): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[18]);                                                       
+..\SYSTEM\usart\usart.c(1329): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[19]/60);
+..\SYSTEM\usart\usart.c(1331): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1334): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1340): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1343): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1349): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1352): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1358): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1361): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1372): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[23]);                                                       
+..\SYSTEM\usart\usart.c(1376): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[24]);                                                       
+..\SYSTEM\usart\usart.c(1380): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[25]/60);
+..\SYSTEM\usart\usart.c(1382): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1385): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1391): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1394): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1400): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1403): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1409): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1412): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1423): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[29]);                                                       
+..\SYSTEM\usart\usart.c(1427): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[30]);                                                       
+..\SYSTEM\usart\usart.c(1431): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[31]/60);
+..\SYSTEM\usart\usart.c(1433): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1436): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1442): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1445): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1451): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1454): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1460): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1463): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1475): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[35]);                                                       
+..\SYSTEM\usart\usart.c(1479): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[36]);                                                       
+..\SYSTEM\usart\usart.c(1483): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[37]/60);
+..\SYSTEM\usart\usart.c(1485): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1488): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1494): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1497): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1503): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1506): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1512): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1515): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c(1526): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[41]);                                                       
+..\SYSTEM\usart\usart.c(1530): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",EEprom[42]);                                                       
+..\SYSTEM\usart\usart.c(1534): warning:  #223-D: function "floor" declared implicitly
+        tm = floor(EEprom[43]/60);
+..\SYSTEM\usart\usart.c(1536): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",tm);                                                       
+..\SYSTEM\usart\usart.c(1539): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+        sprintf(tempbuf,"%d",ts);                                                       
+..\SYSTEM\usart\usart.c: 103 warnings, 0 errors
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_dac.c...
+compiling DeviceErr.c...
+compiling DeviceVibration.c...
+..\HARDWARE\Device\DeviceVibration.h(60): warning:  #1295-D: Deprecated declaration MovProcess - give arg types
+  void MovProcess();
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\DAC\128S085.h(34): warning:  #1295-D: Deprecated declaration DacUpdate - give arg types
+  void DacUpdate();
+..\HARDWARE\DAC\128S085.h(36): warning:  #1295-D: Deprecated declaration TemSet - give arg types
+  void TemSet();
+..\HARDWARE\Device\DeviceVibration.c(100): warning:  #223-D: function "abs" declared implicitly
+                        if((abs(t0k - ad[7])>1)&&w0r)
+..\HARDWARE\Device\DeviceVibration.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=41044 RO-data=940 RW-data=3324 ZI-data=5876  
+FromELF: creating hex file...
+"..\OBJ\CAN.axf" - 0 Error(s), 176 Warning(s).

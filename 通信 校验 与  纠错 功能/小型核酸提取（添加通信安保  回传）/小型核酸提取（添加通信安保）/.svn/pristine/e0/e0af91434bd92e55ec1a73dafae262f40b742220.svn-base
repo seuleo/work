@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\asus\Desktop\SVN\新建文件夹\小型核酸提取V1\USER\CAN.uvproj
+Project File Date:  02/22/2017
+
+<h2>Output:</h2>
+Build target 'CAN'
+compiling main.c...
+..\HARDWARE\EXTI\exti.h(65): warning:  #1295-D: Deprecated declaration InitSwitch - give arg types
+  void InitSwitch();
+..\HARDWARE\Device\DeviceVibration.h(60): warning:  #1295-D: Deprecated declaration MovProcess - give arg types
+  void MovProcess();
+..\HARDWARE\DAC\128S085.h(34): warning:  #1295-D: Deprecated declaration DacUpdate - give arg types
+  void DacUpdate();
+..\HARDWARE\DAC\128S085.h(36): warning:  #1295-D: Deprecated declaration TemSet - give arg types
+  void TemSet();
+main.c(543): warning:  #223-D: function "abs" declared implicitly
+                                                                                                                ((abs(t0k - ad[7])<0.5)&&w0r)||
+main.c(580): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(584): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(599): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(601): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(611): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(615): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(618): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(619): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(629): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(633): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(638): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(639): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(649): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_backward,600,7200*abs(s3p));
+main.c(653): warning:  #223-D: function "abs" declared implicitly
+                                                                        MotorX0Mov(X_forward,600,7200*abs(s3p));
+main.c(658): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","1",SendBackBuff);
+main.c(659): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c(670): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Package("overflag","2",SendBackBuff);
+main.c(671): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                Send_Str(SendBackBuff);
+main.c: 23 warnings, 0 errors
+linking...
+Program Size: Code=41044 RO-data=940 RW-data=3324 ZI-data=5876  
+FromELF: creating hex file...
+"..\OBJ\CAN.axf" - 0 Error(s), 23 Warning(s).
+</pre>
+</body>
+</html>
